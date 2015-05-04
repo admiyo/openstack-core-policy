@@ -12,7 +12,7 @@
     "compute:get_all_tenants": "",
     "compute:start": "is_admin:True or project_id:%(project_id)s",
     "compute:stop": "is_admin:True or project_id:%(project_id)s",
-    "compute:unlock_override": "rule:admin_api",
+    "compute:unlock_override": "is_admin:True",
 
     "compute:shelve": "",
     "compute:shelve_offload": "",
