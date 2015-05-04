@@ -2,8 +2,6 @@
     "context_is_admin": [["role:admin"]],
     "default":  [["is_admin:True"], ["project_id:%(project_id)s"]],
 
-    "admin_api": [["is_admin:True"]],
-
     "volume:create": [],
     "volume:get_all": [],
     "volume:get_volume_metadata": [],
