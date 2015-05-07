@@ -385,7 +385,7 @@
     "network:create_private_dns_domain": "",
     "network:create_public_dns_domain": "",
     "network:delete_dns_domain": "",
-    "network:attach_external_network": "is_admin:True"
+    "network:attach_external_network": "is_admin:True",
 
     "volume:create": [],
     "volume:get_all": [],
@@ -438,7 +438,7 @@
     "backup:backup-import": [["is_admin:True"]],
     "backup:backup-export": [["is_admin:True"]],
 
-    "snapshot_extension:snapshot_actions:update_snapshot_status": []
+    "snapshot_extension:snapshot_actions:update_snapshot_status": [],
 
     "add_image": "",
     "delete_image": "",
