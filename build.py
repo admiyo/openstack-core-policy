@@ -4,7 +4,7 @@ import json
 
 policy = dict()
 
-for source in ["common", "cinder", "glance", "nova" ]:
+for source in ["common", "cinder", "glance", "nova", "keystone" ]:
     filename = "%s-policy.json" % source
     with open(filename, 'r') as f:
         text = f.read()
@@ -14,7 +14,10 @@ for source in ["common", "cinder", "glance", "nova" ]:
         #if source == "glance":
         #    print (rules)
         #    print (policy)
-print (json.dumps(policy, sort_keys=True,  indent=4, separators=(',', ': ')))
+
+with open("policy.json",'w') as outfile:
+    json.dump(policy, outfile, sort_keys=True,
+               indent=4, separators=(',', ': '))
 
         
 #print (json.dumps(policy))
