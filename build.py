@@ -10,12 +10,13 @@ for source in ["common", "cinder", "glance", "nova", "keystone" ]:
         text = f.read()
         rules = json.loads(text)
         policy.update(rules)
-        print (filename)
-        #if source == "glance":
-        #    print (rules)
-        #    print (policy)
+        print ("reading " + filename)
 
-with open("policy.json",'w') as outfile:
+
+outfilename = "policy.json"
+print ("writing " + outfilename)
+
+with open(outfilename,'w') as outfile:
     json.dump(policy, outfile, sort_keys=True,
                indent=4, separators=(',', ': '))
 
