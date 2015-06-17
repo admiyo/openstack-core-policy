@@ -1,6 +1,5 @@
 {
-    "context_is_admin": [["role:admin"]],
-    "default":  [["is_admin:True"], ["project_id:%(project_id)s"]],
+    "volume:default":  [["is_admin:True"], ["project_id:%(project_id)s"]],
 
     "volume:create": [],
     "volume:get_all": [],
